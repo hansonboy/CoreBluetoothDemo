@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>蓝牙的基本使用（CoreBluetooth）.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CBD6EBC61C3A4C12004EFF3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBD6EBDF1C3A4C13004EFF3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBD6EBEA1C3A4C13004EFF3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
