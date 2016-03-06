@@ -106,13 +106,23 @@
     [peripheral addService:self.service];
     
 }
-
+-(NSData*)randomData{
+    static NSInteger i = 0;
+    i = i%4;
+    NSArray *array = [NSArray arrayWithObjects:@"*1111111111111111111111111111111111111111111111111*",
+                      @"*22222222222222222222222222222222222222222222222222*",
+                      @"*33333333333333333333333333333333333333333333333333*",
+                      @"*44444444444444444444444444444444444444444444444444*", nil];
+    return [array[i++] dataUsingEncoding:NSUTF8StringEncoding];
+}
 //每次调用该方法都需要显示的调用[peripheral respondToRequest:withResult:]方法
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request{
     if ([request.characteristic.UUID isEqual:self.characteristic.UUID]) {
         JWLog(@"recieve read request :%@...",request);
         
-        self.characteristic.value = [@"you are success... 成功了！！！" dataUsingEncoding:NSUTF8StringEncoding];
+        //iOS 设备作为主设备的时候只接受前面的155个字节，后面的自动截断
+        self.characteristic.value = [@"012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789555556666" dataUsingEncoding:NSUTF8StringEncoding];
+//        self.characteristic.value = [self randomData];
         
 //        JWLog(@"offset:%d",request.offset);
         //以下是进行错误处理，条件筛选

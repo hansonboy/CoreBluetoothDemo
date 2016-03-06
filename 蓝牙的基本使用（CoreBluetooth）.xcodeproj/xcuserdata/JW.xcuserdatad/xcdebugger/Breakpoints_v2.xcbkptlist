@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x84dd;&#x7259;&#x7684;&#x57fa;&#x672c;&#x4f7f;&#x7528;&#xff08;CoreBluetooth&#xff09;/CBPeriphralViewController.m"
-            timestampString = "478965204.190107"
+            timestampString = "478967618.212482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "-peripheralManager:didReceiveReadRequest:"
             landmarkType = "5">
          </BreakpointContent>
