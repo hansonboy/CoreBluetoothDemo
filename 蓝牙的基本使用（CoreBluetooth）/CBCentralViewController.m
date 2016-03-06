@@ -254,7 +254,7 @@ NSString * const kServiceUUIDString  = @"12AD7375-634D-4F66-9CD8-1D3D8C5B6006";
             
             //读取characteristic 数据
             //判断是否允许读
-            if (characteristic.properties & CBCharacteristicPropertyRead) {
+            if (characteristic.properties & CBCharacteristicPropertyRead && characteristic.properties&CBCharacteristicPropertyWrite) {
                 
                 if (self.setNotisfy.isOn) {
                     //清空数据
@@ -266,7 +266,6 @@ NSString * const kServiceUUIDString  = @"12AD7375-634D-4F66-9CD8-1D3D8C5B6006";
                     //该方法之后将会调用peripheral:didUpdateValueForCharacteristic:error:
                     //该方法只是一次读取，不能跟踪characteristic 的value的变化，而且数据量不应该太大,central 每次接受的数据有限制的
                     [peripheral readValueForCharacteristic:characteristic];
-
                 }
                 
             }else JWLog(@"不可读");
@@ -292,6 +291,8 @@ NSString * const kServiceUUIDString  = @"12AD7375-634D-4F66-9CD8-1D3D8C5B6006";
     
     NSString *string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     
+    NSString *dataToSend = @"朕已阅。";
+    [peripheral writeValue:[dataToSend dataUsingEncoding:NSUTF8StringEncoding] forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
     //在setNotifisfy 时候调用以下代码
     if(characteristic.isNotifying){
         //@"EOM"是我们自己约定的传输数据结尾表示结束的字符串

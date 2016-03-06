@@ -19,6 +19,7 @@
 @interface CBPeriphralViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,CBPeripheralManagerDelegate,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UISwitch *startAdvertisingSwitch;
+@property (weak, nonatomic) IBOutlet UITextView *responseTextView;
 
 @property (strong,nonatomic)CBPeripheralManager *peripheralManager;
 @property (strong,nonatomic)CBMutableCharacteristic *characteristic;
@@ -151,6 +152,7 @@
          JWLog(@"respondToWriteRequest:success.---%@",[[NSString alloc]initWithData:request.value encoding:NSUTF8StringEncoding]);
         
         JWLog(@"------------%@-------------------",[[NSString alloc] initWithData:request.value encoding:NSUTF8StringEncoding]);
+        self.responseTextView.text = [[NSString alloc] initWithData:request.value encoding:NSUTF8StringEncoding];
     }
 }
 

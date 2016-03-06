@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x84dd;&#x7259;&#x7684;&#x57fa;&#x672c;&#x4f7f;&#x7528;&#xff08;CoreBluetooth&#xff09;/CBPeriphralViewController.m"
-            timestampString = "478963637.758509"
+            timestampString = "478965204.190107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-peripheralManager:didReceiveReadRequest:"
             landmarkType = "5">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x84dd;&#x7259;&#x7684;&#x57fa;&#x672c;&#x4f7f;&#x7528;&#xff08;CoreBluetooth&#xff09;/CBCentralViewController.m"
-            timestampString = "474625913.648506"
+            timestampString = "478965543.862558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
             landmarkName = "-peripheral:didUpdateValueForCharacteristic:error:"
             landmarkType = "5">
          </BreakpointContent>

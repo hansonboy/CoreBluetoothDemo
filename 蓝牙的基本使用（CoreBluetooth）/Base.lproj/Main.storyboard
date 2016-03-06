@@ -244,11 +244,10 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-Xj-iTw">
-                                <rect key="frame" x="180" y="121" width="240" height="352"/>
+                                <rect key="frame" x="20" y="121" width="560" height="113"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="352" id="gRg-QX-3zt"/>
-                                    <constraint firstAttribute="width" constant="240" id="x1g-TS-fdh"/>
+                                    <constraint firstAttribute="height" constant="113" id="r9l-72-y2i"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -257,19 +256,33 @@
                                     <outlet property="delegate" destination="avc-u5-JcU" id="Gli-4p-8w8"/>
                                 </connections>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-hH-kbi">
+                                <rect key="frame" x="20" y="271" width="560" height="128"/>
+                                <color key="backgroundColor" red="0.3060319849" green="1" blue="0.02943260717" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回复" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-bz-6kY">
+                                <rect key="frame" x="20" y="242" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZAI-NQ-t8s" firstAttribute="top" secondItem="ZwA-fr-Zne" secondAttribute="bottom" constant="8" symbolic="YES" id="0ME-OW-bRr"/>
-                            <constraint firstItem="IHK-Xj-iTw" firstAttribute="top" secondItem="ZAI-NQ-t8s" secondAttribute="bottom" constant="8" id="BLz-6H-Mrs"/>
-                            <constraint firstItem="IHK-Xj-iTw" firstAttribute="centerX" secondItem="1Td-KB-Pdf" secondAttribute="centerX" id="C2q-rX-jKQ"/>
+                            <constraint firstItem="IHK-Xj-iTw" firstAttribute="leading" secondItem="1Td-KB-Pdf" secondAttribute="leadingMargin" id="2Jv-Vq-Q9H"/>
+                            <constraint firstItem="IHK-Xj-iTw" firstAttribute="trailing" secondItem="1Td-KB-Pdf" secondAttribute="trailingMargin" id="9Gv-3d-0t6"/>
                             <constraint firstItem="ZAI-NQ-t8s" firstAttribute="centerX" secondItem="1Td-KB-Pdf" secondAttribute="centerX" id="Ony-qd-21P"/>
+                            <constraint firstItem="IHK-Xj-iTw" firstAttribute="top" secondItem="ZAI-NQ-t8s" secondAttribute="bottom" constant="8" id="xwa-mR-t7I"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="CBPeriphral模式" id="2Hn-qz-4n7"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="responseTextView" destination="AZU-hH-kbi" id="e8a-FX-ydU"/>
                         <outlet property="startAdvertisingSwitch" destination="hoJ-J6-PIz" id="NGl-qw-3W5"/>
                         <outlet property="textView" destination="IHK-Xj-iTw" id="UQx-FT-PAc"/>
                     </connections>
