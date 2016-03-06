@@ -149,6 +149,8 @@
         //虽然有很多的写请求，但是把他们看成一个整体，所以只对第一个请求执行respondToRequest:withResult方法
         [peripheral respondToRequest:request withResult:CBATTErrorSuccess];
          JWLog(@"respondToWriteRequest:success.---%@",[[NSString alloc]initWithData:request.value encoding:NSUTF8StringEncoding]);
+        
+        JWLog(@"------------%@-------------------",[[NSString alloc] initWithData:request.value encoding:NSUTF8StringEncoding]);
     }
 }
 
