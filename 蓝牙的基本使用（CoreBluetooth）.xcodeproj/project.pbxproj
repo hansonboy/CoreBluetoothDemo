@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB631E371C3D0B850097BD2B /* CBCentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB631E361C3D0B840097BD2B /* CBCentralViewController.m */; };
+		CB631E3A1C3D0B940097BD2B /* CBPeriphralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB631E391C3D0B940097BD2B /* CBPeriphralViewController.m */; };
 		CBD6EBCC1C3A4C12004EFF3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBCB1C3A4C12004EFF3D /* main.m */; };
 		CBD6EBCF1C3A4C13004EFF3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBCE1C3A4C13004EFF3D /* AppDelegate.m */; };
-		CBD6EBD21C3A4C13004EFF3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBD11C3A4C13004EFF3D /* ViewController.m */; };
 		CBD6EBD51C3A4C13004EFF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6EBD31C3A4C13004EFF3D /* Main.storyboard */; };
 		CBD6EBD71C3A4C13004EFF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD6EBD61C3A4C13004EFF3D /* Assets.xcassets */; };
 		CBD6EBDA1C3A4C13004EFF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD6EBD81C3A4C13004EFF3D /* LaunchScreen.storyboard */; };
 		CBD6EBE51C3A4C13004EFF3D /* ________CoreBluetooth_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBE41C3A4C13004EFF3D /* ________CoreBluetooth_Tests.m */; };
 		CBD6EBF01C3A4C13004EFF3D /* ________CoreBluetooth_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBEF1C3A4C13004EFF3D /* ________CoreBluetooth_UITests.m */; };
+		CBD6EBFF1C3A4EB0004EFF3D /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6EBFE1C3A4EB0004EFF3D /* UIImage+FixOrientation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB631E351C3D0B840097BD2B /* CBCentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCentralViewController.h; sourceTree = "<group>"; };
+		CB631E361C3D0B840097BD2B /* CBCentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCentralViewController.m; sourceTree = "<group>"; };
+		CB631E381C3D0B940097BD2B /* CBPeriphralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPeriphralViewController.h; sourceTree = "<group>"; };
+		CB631E391C3D0B940097BD2B /* CBPeriphralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPeriphralViewController.m; sourceTree = "<group>"; };
+		CB9947111C4CBFB700D7C0FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CBD6EBC71C3A4C12004EFF3D /* 蓝牙的基本使用（CoreBluetooth）.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "蓝牙的基本使用（CoreBluetooth）.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD6EBCB1C3A4C12004EFF3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBD6EBCD1C3A4C12004EFF3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBD6EBCE1C3A4C13004EFF3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CBD6EBD01C3A4C13004EFF3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CBD6EBD11C3A4C13004EFF3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CBD6EBD41C3A4C13004EFF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD6EBD61C3A4C13004EFF3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD6EBD91C3A4C13004EFF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		CBD6EBEB1C3A4C13004EFF3D /* 蓝牙的基本使用（CoreBluetooth）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "蓝牙的基本使用（CoreBluetooth）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD6EBEF1C3A4C13004EFF3D /* ________CoreBluetooth_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________CoreBluetooth_UITests.m"; sourceTree = "<group>"; };
 		CBD6EBF11C3A4C13004EFF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD6EBFD1C3A4EB0004EFF3D /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		CBD6EBFE1C3A4EB0004EFF3D /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +110,17 @@
 			children = (
 				CBD6EBCD1C3A4C12004EFF3D /* AppDelegate.h */,
 				CBD6EBCE1C3A4C13004EFF3D /* AppDelegate.m */,
-				CBD6EBD01C3A4C13004EFF3D /* ViewController.h */,
-				CBD6EBD11C3A4C13004EFF3D /* ViewController.m */,
 				CBD6EBD31C3A4C13004EFF3D /* Main.storyboard */,
+				CBD6EBFD1C3A4EB0004EFF3D /* UIImage+FixOrientation.h */,
+				CBD6EBFE1C3A4EB0004EFF3D /* UIImage+FixOrientation.m */,
 				CBD6EBD61C3A4C13004EFF3D /* Assets.xcassets */,
 				CBD6EBD81C3A4C13004EFF3D /* LaunchScreen.storyboard */,
 				CBD6EBDB1C3A4C13004EFF3D /* Info.plist */,
 				CBD6EBCA1C3A4C12004EFF3D /* Supporting Files */,
+				CB631E351C3D0B840097BD2B /* CBCentralViewController.h */,
+				CB631E361C3D0B840097BD2B /* CBCentralViewController.m */,
+				CB631E381C3D0B940097BD2B /* CBPeriphralViewController.h */,
+				CB631E391C3D0B940097BD2B /* CBPeriphralViewController.m */,
 			);
 			path = "蓝牙的基本使用（CoreBluetooth）";
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CBD6EBCB1C3A4C12004EFF3D /* main.m */,
+				CB9947111C4CBFB700D7C0FE /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD6EBD21C3A4C13004EFF3D /* ViewController.m in Sources */,
+				CB631E371C3D0B850097BD2B /* CBCentralViewController.m in Sources */,
 				CBD6EBCF1C3A4C13004EFF3D /* AppDelegate.m in Sources */,
+				CB631E3A1C3D0B940097BD2B /* CBPeriphralViewController.m in Sources */,
+				CBD6EBFF1C3A4EB0004EFF3D /* UIImage+FixOrientation.m in Sources */,
 				CBD6EBCC1C3A4C12004EFF3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +427,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "./蓝牙的基本使用（CoreBluetooth）/PrefixHeader.pch";
 				INFOPLIST_FILE = "蓝牙的基本使用（CoreBluetooth）/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JW.--------CoreBluetooth-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "./蓝牙的基本使用（CoreBluetooth）/PrefixHeader.pch";
 				INFOPLIST_FILE = "蓝牙的基本使用（CoreBluetooth）/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JW.--------CoreBluetooth-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +520,7 @@
 				CBD6EBF61C3A4C13004EFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBD6EBF71C3A4C13004EFF3D /* Build configuration list for PBXNativeTarget "蓝牙的基本使用（CoreBluetooth）Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				CBD6EBF91C3A4C13004EFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBD6EBFA1C3A4C13004EFF3D /* Build configuration list for PBXNativeTarget "蓝牙的基本使用（CoreBluetooth）UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				CBD6EBFC1C3A4C13004EFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
